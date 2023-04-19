@@ -19,23 +19,58 @@
 
 <body>
   <div class="wrapper">
-    <header>
-      <div class="container"></div>
+    <header class="header">
+      <div class="container">
+        <div class="header__contacts">
+          <a class="header__contacts-logo" href="index.html" aria-label="Логотип фитнес-центра SUPERGYM.">
+            <svg class="header__contacts-logo-icon" width="122" height="23" viewBox="0 0 122 23" fill="currentColor">
+              <use href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <a class="header__contacts-tel" href="tel:+78005555555">8-800-555-55-55</a>
+        </div>
+        <div class="header__main">
+          <div class="header__main-info">
+            <span class="header__main-info-town">омск</span>
+            <div class="header__main-info-wrapper">
+              <ul class="header__main-info-list">
+                <li class="header__main-info-item">Тренажерный зал</li>
+                <li class="header__main-info-item">Групповые занятия</li>
+                <li class="header__main-info-item">Кардио-зона</li>
+              </ul>
+              <span class="header__main-info-name">фитнес центр</span>
+            </div>
+            <a class="btn btn--main" href="#subscription">Купить абонемент</a>
+          </div>
+          <div class="header__main-photo">
+            <picture>
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="img/main-photo-tablet.webp 1x, img/main-photo-tablet-2x.webp 2x">
+              <source type="image/webp" srcset="img/main-photo-desktop.webp 1x, img/main-photo-desktop-2x.webp 2x">
+
+              <source media="(max-width: 1023px)" srcset="img/main-photo-tablet.jpg, img/main-photo-tablet-2x.jpg 2x">
+              <img src="img/main-photo-desktop.jpg" srcset="img/main-photo-desktop-2x.jpg 2x" width="500" height="556"
+                alt="Мужчина в черной футболке c проработанной в спрортзале фигурой.">
+            </picture>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="intro">
+      <section class="subscription" id="subscription">
         <div class="container">
           <h1>Тестовая страница.</h1>
-          <batton class="btn" type="batton">Тестовая кнопка</batton>
+
 
         </div>
       </section>
     </main>
     <footer>
-      <div class="container"></div>
+      <div class="container">
+        Футер страницы
+      </div>
     </footer>
   </div>
-
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

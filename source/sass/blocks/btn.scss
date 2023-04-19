@@ -1,9 +1,9 @@
 .btn {
   display: inline-flex;
-  padding: 27px 44px 28px 44px;
-  color: $color-default-black;
+  padding: 22px;
+  color: $color-default-white;
   background-color: $color-transparent;
-  border: 2px solid $color-default-black;
+  border: 4px solid $color-default-white;
   cursor: pointer;
   transition: opacity $trans-default;
   align-items: center;
@@ -14,23 +14,27 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
+  &--main {
+    min-width: 230px;
+  }
+
   &:disabled {
     opacity: 0.5;
     pointer-events: none;
   }
 
-  // @include hover-focus {
-  //   opacity: 0.8;
-  // }
-
   &:hover,
   &:focus {
 
-    opacity: 0.7;
+    opacity: 0.6;
+    border: 4px solid $color-whisper;
+    color: $color-whisper;
   }
 
   &:active {
 
-    opacity: 0.5;
+    opacity: 0.4;
+    border: 4px solid $color-whisper;
+    color: $color-whisper;
   }
 }
