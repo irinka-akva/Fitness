@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {videoPlayHandler} from './modules/video-player';
+import {initTabs} from './modules/tabs/init-tabs';
 
 // ---------------------------------
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     videoPlayHandler();
+    initTabs();
   });
 });
 
