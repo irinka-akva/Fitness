@@ -14,23 +14,21 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
+  &--promo {
+    width: 100%;
+
+    @include vp-1199 {
+      font-size: 10px;
+      line-height: 12px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 2px solid $color-default-white;
+      margin-top: auto;
+    }
+  }
+
   &--main {
     min-width: 230px;
-
-    &:hover,
-    &:focus {
-
-      opacity: 0.6;
-      border: 4px solid $color-whisper;
-      color: $color-whisper;
-    }
-
-    &:active {
-
-      opacity: 0.4;
-      border: 4px solid $color-whisper;
-      color: $color-whisper;
-    }
 
     @include vp-1199 {
       min-width: 183px;
@@ -41,6 +39,19 @@
       max-width: 320px;
       margin: 0 auto;
     }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    border-color: $color-whisper;
+    color: $color-whisper;
+  }
+
+  &:active {
+    opacity: 0.4;
+    border-color: $color-whisper;
+    color: $color-whisper;
   }
 
   &:disabled {

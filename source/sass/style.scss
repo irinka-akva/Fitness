@@ -2,8 +2,10 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
 // Swiper 7.4.1
-// @import "vendor/swiper";
+
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -21,8 +23,11 @@
 @import "blocks/btn";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
+@import "blocks/coaches";
+@import "blocks/card";
 @import "blocks/gym";
 @import "blocks/header";
+@import "blocks/promo";
 @import "blocks/subscription";
 @import "blocks/tabs";
 @import "blocks/data-tabs";
