@@ -276,169 +276,220 @@
           </div>
         </div>
       </section>
-
       <section class="coaches">
         <div class="container">
           <h2 class="coaches__title">Тренеры</h2>
           <div class="coaches__container">
-          <div class="coaches__swiper-container swiper-container">
-            <ul class="coaches__list swiper-wrapper">
-              <li class="card swiper-slide">
-                <div class="card__back">
-                  <h3 class="card__back-title">Анна Павлова</h3>
-                  <span class="card__back-info">BodyShape</span>
-                  <ul class="card__back-list">
-                    <li class="card__back-item">Certified Level 1 Trainer</li>
-                    <li class="card__back-item">Призер чемпионата Франции по BodyShape </li>
-                    <li class="card__back-item">Опыт — 5 лет</li>
-                  </ul>
-                </div>
-                <div class="card__front">
-                  <picture>
-                    <source type="image/webp" srcset="img/coach-1.webp 1x, img/coach-1-2x.webp 2x">
+            <button class="coaches__btn-prev swiper-button-prev" type="button" aria-label="Предыдущий слайд."></button>
+            <button class="coaches__btn-next swiper-button-next" type="button" aria-label="Следующий слайд."></button>
+            <div class="coaches__swiper-container swiper">
+              <ul class="coaches__list swiper-wrapper" data-catalog>
+                <li class="card swiper-slide" tabindex="0" data-card>
+                  <div class="card__front" data-name="Анна Павлова" data-card-front>
+                    <picture>
+                      <source type="image/webp" srcset="img/coach-1.webp 1x, img/coach-1-2x.webp 2x">
+                      <img src="img/coach-1.jpg" srcset="img/coach-1-2x.jpg 2x" width="260" height="294"
+                        alt="Темноволосая бледная девушка на сером фоне.">
+                    </picture>
+                    <div class="card__back-info" data-card-back>
+                      <h3 class="card__back-title">Анна Павлова</h3>
+                      <span class="card__back-info-text">BodyShape</span>
+                      <ul class="card__back-list">
+                        <li class="card__back-item">Certified Level 1 Trainer</li>
+                        <li class="card__back-item">Призер чемпионата Франции по BodyShape </li>
+                        <li class="card__back-item">Опыт — 5 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="card swiper-slide" tabindex="0" data-card>
+                  <div class="card__front" data-name="Алексей Лавров" data-card-front>
+                    <picture>
+                      <source type="image/webp" srcset="img/coach-2.webp 1x, img/coach-2-2x.webp 2x">
+                      <img src="img/coach-2.jpg" srcset="img/coach-2-2x.jpg 2x" width="260" height="294"
+                        alt="Темноволосый мужчина со щетиной на сером фоне.">
+                    </picture>
+                    <div class="card__back-info" data-card-back>
+                      <h3 class="card__back-title">Алексей Лавров</h3>
+                      <span class="card__back-info-text">Box</span>
+                      <ul class="card__back-list">
+                        <li class="card__back-item">Certified Level 2 Trainer</li>
+                        <li class="card__back-item">Чемпион мира 2020 по боксу</li>
+                        <li class="card__back-item">Опыт — 8 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="card swiper-slide" tabindex="0" data-card>
+                  <div class="card__front" data-name="Александр Пашков" data-card-front>
+                    <picture>
+                      <source type="image/webp" srcset="img/coach-3.webp 1x, img/coach-3-2x.webp 2x">
+                      <img src="img/coach-3.jpg" srcset="img/coach-3-2x.jpg 2x" width="260" height="294"
+                        alt="Темноволосый мужчина в очках на сером фоне.">
+                    </picture>
+                    <div class="card__back-info" data-card-back>
+                      <h3 class="card__back-title">Александр Пашков</h3>
+                      <span class="card__back-info-text">CrossFit</span>
+                      <ul class="card__back-list">
+                        <li class="card__back-item">Certified Level 3 Trainer</li>
+                        <li class="card__back-item">Победитель чемпионата России по CrossFit </li>
+                        <li class="card__back-item">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="card swiper-slide" tabindex="0" data-card>
+                  <div class="card__front" data-name="Мария Кетова" data-card-front>
+                    <picture>
+                      <source type="image/webp" srcset="img/coach-4.webp 1x, img/coach-4-2x.webp 2x">
 
-                    <img src="img/coach-1.jpg" srcset="img/coach-1-2x.jpg 2x" width="260"
-                      height="294" alt="Темноволосая бледная девушка на сером фоне.">
-                  </picture>
-                </div>
-              </li>
-              <li class="card swiper-slide">
-                <div class="card__back">
-                  <h3 class="card__back-title">Алексей Лавров</h3>
-                  <span class="card__back-info">Box</span>
-                  <ul class="card__back-list">
-                    <li class="card__back-item">Certified Level 2 Trainer</li>
-                    <li class="card__back-item">Чемпион мира 2020 по боксу</li>
-                    <li class="card__back-item">Опыт — 8 лет</li>
-                  </ul>
-                </div>
-                <div class="card__front">
-                  <picture>
-                    <source type="image/webp" srcset="img/coach-2.webp 1x, img/coach-2-2x.webp 2x">
+                      <img src="img/coach-4.jpg" srcset="img/coach-4-2x.jpg 2x" width="260" height="294"
+                        alt="Темноволосая девушка с рукой, прислоненной к лицу на сером фоне.">
+                    </picture>
+                    <div class="card__back-info" data-card-back>
+                      <h3 class="card__back-title">Мария Кетова</h3>
+                      <span class="card__back-info-text">Йога</span>
+                      <ul class="card__back-list">
+                        <li class="card__back-item">Certified Level 4 Trainer</li>
+                        <li class="card__back-item">Профессиональный преподаватель разных видов йоги</li>
+                        <li class="card__back-item">Опыт — 3 года</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="card swiper-slide" tabindex="0" data-card>
+                  <div class="card__front" data-name="Елена Миролюбова" data-card-front>
+                    <picture>
+                      <source type="image/webp" srcset="img/coach-1.webp 1x, img/coach-1-2x.webp 2x">
 
-                    <img src="img/coach-2.jpg" srcset="img/coach-2-2x.jpg 2x" width="260"
-                      height="294" alt="Темноволосый мужчина со щетиной на сером фоне.">
-                  </picture>
-                </div>
-              </li>
-              <li class="card swiper-slide">
-                <div class="card__back">
-                  <h3 class="card__back-title">Александр Пашков</h3>
-                  <span class="card__back-info">CrossFit</span>
-                  <ul class="card__back-list">
-                    <li class="card__back-item">Certified Level 3 Trainer</li>
-                    <li class="card__back-item">Победитель чемпионата России по CrossFit </li>
-                    <li class="card__back-item">Опыт — 6 лет</li>
-                  </ul>
-                </div>
-                <div class="card__front">
-                  <picture>
-                    <source type="image/webp" srcset="img/coach-3.webp 1x, img/coach-3-2x.webp 2x">
-                    <img src="img/coach-3.jpg" srcset="img/coach-3-2x.jpg 2x" width="260"
-                      height="294" alt="Темноволосый мужчина в очках на сером фоне.">
-                  </picture>
-                </div>
-              </li>
-              <li class="card swiper-slide">
-                <div class="card__back">
-                  <h3 class="card__back-title">Мария Кетова</h3>
-                  <span class="card__back-info">Йога</span>
-                  <ul class="card__back-list">
-                    <li class="card__back-item">Certified Level 4 Trainer</li>
-                    <li class="card__back-item">Профессиональный преподаватель разных видов йоги</li>
-                    <li class="card__back-item">Опыт — 3 года</li>
-                  </ul>
-                </div>
-                <div class="card__front">
-                  <picture>
-                    <source type="image/webp" srcset="img/coach-4.webp 1x, img/coach-4-2x.webp 2x">
-
-                    <img src="img/coach-4.jpg" srcset="img/coach-4-2x.jpg 2x" width="260"
-                      height="294" alt="Темноволосая девушка с рукой, прислоненной к лицу на сером фоне.">
-                  </picture>
-                </div>
-              </li>
-              <li class="card swiper-slide">
-                <div class="card__back">
-                  <h3 class="card__back-title">Елена Миролюбова</h3>
-                  <span class="card__back-info">FitnessMix</span>
-                  <ul class="card__back-list">
-                    <li class="card__back-item">Certified Level 1 Trainer</li>
-                    <li class="card__back-item">Участвовала в чемпионате FitnessMix в Москве</li>
-                    <li class="card__back-item">Опыт — 4 года</li>
-                  </ul>
-                </div>
-                <div class="card__front">
-                  <picture>
-                    <source type="image/webp" srcset="img/coach-1.webp 1x, img/coach-1-2x.webp 2x">
-
-                    <img src="img/coach-1.jpg" srcset="img/coach-1-2x.jpg 2x" width="260"
-                      height="294" alt="Темноволосая бледная девушка с серыми глазами на сером фоне.">
-                  </picture>
-                </div>
-              </li>
-              <li class="card swiper-slide">
-                <div class="card__back">
-                  <h3 class="card__back-title">Макбек Цескаридзе</h3>
-                  <span class="card__back-info">Бочата</span>
-                  <ul class="card__back-list">
-                    <li class="card__back-item">Certified Level 3 Trainer</li>
-                    <li class="card__back-item">Призер чемпионата Италии по Бочате</li>
-                    <li class="card__back-item">Опыт — 5 лет</li>
-                  </ul>
-                </div>
-                <div class="card__front">
-                  <picture>
-                    <source type="image/webp" srcset="img/coach-2.webp 1x, img/coach-2-2x.webp 2x">
-
-                    <img src="img/coach-2.jpg" srcset="img/coach-2-2x.jpg 2x" width="260"
-                      height="294" alt="Коротко стриженый мужчина со щетиной на сером фоне.">
-                  </picture>
-                </div>
-              </li>
-              <li class="card swiper-slide">
-                <div class="card__back">
-                  <h3 class="card__back-title">Николай Глушко</h3>
-                  <span class="card__back-info">Восточные единоборства</span>
-                  <ul class="card__back-list">
-                    <li class="card__back-item">Certified Level 4 Trainer</li>
-                    <li class="card__back-item">Победитель соревнований по восточный единоборствам по России 2021</li>
-                    <li class="card__back-item">Опыт — 7 лет</li>
-                  </ul>
-                </div>
-                <div class="card__front">
-                  <picture>
-                    <source type="image/webp" srcset="img/coach-3.webp 1x, img/coach-3-2x.webp 2x">
-                    <img src="img/coach-3.jpg" srcset="img/coach-3-2x.jpg 2x" width="260"
-                      height="294" alt="Темноволосая бледная девушка на сером фоне.">
-                  </picture>
-                </div>
-              </li>
-              <li class="card swiper-slide">
-                <div class="card__back">
-                  <h3 class="card__back-title">Карина Иванчук</h3>
-                  <span class="card__back-info">BodySculpt</span>
-                  <ul class="card__back-list">
-                    <li class="card__back-item">Certified Level 2 Trainer</li>
-                    <li class="card__back-item">Профессиональный тренер</li>
-                    <li class="card__back-item">Опыт — 4 года</li>
-                  </ul>
-                </div>
-                <div class="card__front">
-                  <picture>
-                    <source type="image/webp" srcset="img/coach-4.webp 1x, img/coach-4-2x.webp 2x">
-
-                    <img src="img/coach-4.jpg" srcset="img/coach-4-2x.jpg 2x" width="260"
-                      height="294" alt="Темноволосая девушка на сером фоне.">
-                  </picture>
-                </div>
-              </li>
-            </ul>
-
+                      <img src="img/coach-1.jpg" srcset="img/coach-1-2x.jpg 2x" width="260" height="294"
+                        alt="Темноволосая бледная девушка с серыми глазами на сером фоне.">
+                    </picture>
+                    <div class="card__back-info" data-card-back>
+                      <h3 class="card__back-title">Елена Миролюбова</h3>
+                      <span class="card__back-info-text">FitnessMix</span>
+                      <ul class="card__back-list">
+                        <li class="card__back-item">Certified Level 1 Trainer</li>
+                        <li class="card__back-item">Участвовала в чемпионате FitnessMix в Москве</li>
+                        <li class="card__back-item">Опыт — 4 года</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="card swiper-slide" tabindex="0" data-card>
+                  <div class="card__front" data-name="Макбек Цескаридзе" data-card-front>
+                    <picture>
+                      <source type="image/webp" srcset="img/coach-2.webp 1x, img/coach-2-2x.webp 2x">
+                      <img src="img/coach-2.jpg" srcset="img/coach-2-2x.jpg 2x" width="260" height="294"
+                        alt="Коротко стриженый мужчина со щетиной на сером фоне.">
+                    </picture>
+                    <div class="card__back-info" data-card-back>
+                      <h3 class="card__back-title">Макбек Цескаридзе</h3>
+                      <span class="card__back-info-text">Бочата</span>
+                      <ul class="card__back-list">
+                        <li class="card__back-item">Certified Level 3 Trainer</li>
+                        <li class="card__back-item">Призер чемпионата Италии по Бочате</li>
+                        <li class="card__back-item">Опыт — 5 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="card swiper-slide" tabindex="0" data-card>
+                  <div class="card__front" data-name="Николай Глушко" data-card-front>
+                    <picture>
+                      <source type="image/webp" srcset="img/coach-3.webp 1x, img/coach-3-2x.webp 2x">
+                      <img src="img/coach-3.jpg" srcset="img/coach-3-2x.jpg 2x" width="260" height="294"
+                        alt="Темноволосая бледная девушка на сером фоне.">
+                    </picture>
+                    <div class="card__back-info" data-card-back>
+                      <h3 class="card__back-title">Николай Глушко</h3>
+                      <span class="card__back-info-text">Айкодо</span>
+                      <ul class="card__back-list">
+                        <li class="card__back-item">Certified Level 4 Trainer</li>
+                        <li class="card__back-item">Победитель соревнований по айкидо по России 2021</li>
+                        <li class="card__back-item">Опыт — 7 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="card swiper-slide" tabindex="0" data-card>
+                  <div class="card__front" data-name="Карина Иванчук" data-card-front>
+                    <picture>
+                      <source type="image/webp" srcset="img/coach-4.webp 1x, img/coach-4-2x.webp 2x">
+                      <img src="img/coach-4.jpg" srcset="img/coach-4-2x.jpg 2x" width="260" height="294"
+                        alt="Темноволосая девушка на сером фоне.">
+                    </picture>
+                    <div class="card__back-info" data-card-back>
+                      <h3 class="card__back-title">Карина Иванчук</h3>
+                      <span class="card__back-info-text">BodySculpt</span>
+                      <ul class="card__back-list">
+                        <li class="card__back-item">Certified Level 2 Trainer</li>
+                        <li class="card__back-item">Профессиональный тренер</li>
+                        <li class="card__back-item">Опыт — 4 года</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-          <button class="coaches__btn-prev swiper-button-prev" type="button" aria-label="Предыдущий слайд."></button>
-          <button class="coaches__btn-next swiper-button-next" type="button" aria-label="Следующий слайд."></button>
         </div>
+      </section>
+
+      <section class="advantages">
+        <div class="advantages__container">
+          <h2 class="advantages__title">Наши преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__item-number-wrapper">
+                <span class="advantages__item-number">900</span>
+                <span class="advantages__item-counter">кв/м</span>
+              </div>
+              <div class="advantages__item-text-wrapper">
+                <h3>Площадь</h3>
+                <p>Занимайтесь без очередей и&nbsp;толпучки</p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-number-wrapper">
+                <span class="advantages__item-number">70</span>
+                <span class="advantages__item-counter">машин</span>
+              </div>
+              <div class="advantages__item-text-wrapper">
+                <h3>Собственная парковка</h3>
+                <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
+              </div>
+            </li>
+            <li class="advantages__item advantages__item--main">
+              <div class="advantages__item-number-wrapper">
+                <span class="advantages__item-number">100</span>
+                <span class="advantages__item-counter">тренажеров</span>
+              </div>
+              <div class="advantages__item-text-wrapper">
+                <p>Современные тренажеры на&nbsp;все группы мышц</p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-number-wrapper">
+                <span class="advantages__item-number">350</span>
+                <span class="advantages__item-counter">мест</span>
+              </div>
+              <div class="advantages__item-text-wrapper">
+                <h3>Комфорт</h3>
+                <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-number-wrapper">
+                <span class="advantages__item-number">5+</span>
+                <span class="advantages__item-counter">лет</span>
+              </div>
+              <div class="advantages__item-text-wrapper">
+                <h3>Тренерский опыт</h3>
+                <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
