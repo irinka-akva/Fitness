@@ -1,4 +1,4 @@
-const initSwiper = () => {
+const initSwiperPhotos = () => {
   // eslint-disable-next-line no-undef, no-unused-vars
   const swiper = new Swiper('.coaches__swiper-container', {
     navigation: {
@@ -23,4 +23,15 @@ const initSwiper = () => {
   });
 };
 
-export {initSwiper};
+const initSwiperFeedback = () => {
+  // eslint-disable-next-line no-undef, no-unused-vars
+  const swiper = new Swiper('.feedback__list-wrapper', {
+    navigation: {
+      nextEl: '.feedback__btn-next',
+      prevEl: '.feedback__btn-prev',
+    },
+    slidesPerView: 1,
+  });
+};
+
+export {initSwiperPhotos, initSwiperFeedback};

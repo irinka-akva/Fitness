@@ -1,0 +1,20 @@
+.contacts {
+  display: grid;
+  overflow-x: hidden;
+  grid-template-columns: 50vw 50vw;
+}
+
+.contacts__form-wrapper {
+  background-color: #102654;
+  color: $color-default-white;
+  align-self: stretch;
+  justify-self: end;
+  padding: 56px 170px 70px 103px;
+  padding-left: 100vw;
+}
+
+.contacts__info {
+  padding: 56px 159px 70px 120px;
+  padding-right: calc(100% - 400px);
+  border-top: 1px solid #74819C;
+}

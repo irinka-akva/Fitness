@@ -1,3 +1,154 @@
 .feedback {
-  min-height: 700px;
+  padding-bottom: 100px;
+
+  @include vp-767 {
+    padding-bottom: 70px;
+  }
+}
+
+.feedback__wrapper {
+  position: relative;
+}
+
+.feedback__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.feedback__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.feedback__list-wrapper {
+  width: 48.28%;
+
+  @include vp-1199 {
+    width: 83.48%;
+  }
+
+  @include vp-767 {
+    width: 77.93%;
+  }
+}
+
+.feedback__list-item {
+  display: grid;
+  grid-template-columns: 18.35% 75.23%;
+  column-gap: 6.42%;
+  background: $color-resolution-blue;
+  box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+  color: $color-default-white;
+  padding: 60px;
+  height: auto;
+
+  @include vp-767 {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 20px;
+    padding: 40px 25px;
+  }
+}
+
+.feedback__list-item-img-wrapper {
+  width: 80px;
+  height: 80px;
+  grid-row: 1/3;
+
+
+  @include vp-767 {
+    width: 68px;
+  height: 68px;
+  grid-row: 1/2;
+  }
+}
+
+.feedback__list-item span {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 10px;
+
+  @include vp-767 {
+    line-height: 26px;
+  }
+}
+
+.feedback__list-item blockquote {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: start;
+
+  @include vp-767 {
+    grid-column: 1/3;
+    text-align: center;
+  }
+}
+
+
+.feedback__btn-prev.swiper-button-prev,
+.feedback__btn-next.swiper-button-next {
+  border: none;
+  background-color: transparent;
+  color: #AFAFAF;
+}
+
+.feedback__btn-prev.swiper-button-prev:hover,
+.feedback__btn-next.swiper-button-next:hover,
+.feedback__btn-prev.swiper-button-prev:focus,
+.feedback__btn-next.swiper-button-next:focus {
+  color: $color-resolution-blue;
+}
+
+.feedback__btn-prev.swiper-button-prev:active,
+.feedback__btn-next.swiper-button-next:active {
+  color: $color-neon-blue;
+}
+
+.feedback__btn-prev.swiper-button-prev:disabled,
+.feedback__btn-next.swiper-button-next:disabled {
+  color: #AFAFAF;
+  opacity: 0.2;
+}
+
+.feedback__btn-prev.swiper-button-prev {
+  left: 244px;
+
+  @include vp-1199 {
+    left: 0;
+  }
+}
+
+.feedback__btn-next.swiper-button-next {
+  right: 244px;
+
+  @include vp-1199 {
+    right: 0;
+  }
+}
+
+.feedback__btn-prev.swiper-button-prev::after,
+.feedback__btn-next.swiper-button-next::after {
+  font-size: 32px;
+
+  @include vp-767 {
+    font-size: 19px;
+  }
 }
