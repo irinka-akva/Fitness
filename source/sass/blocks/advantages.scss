@@ -16,9 +16,9 @@
 
 .advantages__container {
   width: 100%;
-  max-width: 1282px;
+  max-width: 1260px;
   margin: 0 auto;
-  padding: 0 61px;
+  padding: 0 111px;
 
   @include vp-1199 {
     padding: 0 45px;
@@ -33,12 +33,12 @@
 .advantages__title {
   margin: 0;
   margin-bottom: 55px;
+  padding-left: 334px;
   font-family: $ff-alumni;
   font-style: normal;
   font-weight: 600;
   font-size: 54px;
   line-height: 65px;
-  text-align: center;
   letter-spacing: 0.03em;
 
   @include vp-1199 {
@@ -59,9 +59,9 @@
   margin: 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: 32.76% 23.08% 32.76%;
-  column-gap: 5.7%;
-  row-gap: 140px;
+  grid-template-columns: 34.75% 23.08% 34.65%;
+  column-gap: 3.9%;
+  row-gap: 155px;
 
   @include vp-1199 {
     grid-template-columns: 1fr 1fr;
@@ -77,18 +77,20 @@
 .advantages__item {
   display: flex;
   position: relative;
+  padding-left: 19px;
+  padding-right: 7px;
 
   @include vp-767 {
-   padding: 0 47px;
-   flex-direction: column;
-   text-align: center;
+    padding: 0 47px;
+    flex-direction: column;
+    text-align: center;
   }
 
   &--main {
     display: block;
     grid-column: 2/3;
     grid-row: 1/3;
-    padding: 30px;
+    padding: 40px 35px 35px 30px;
     background-color: $color-resolution-blue;
     color: $color-default-white;
 
@@ -110,14 +112,26 @@
   }
 }
 
-.advantages__item:nth-child(2n+4)::after,
-.advantages__item:nth-child(2n+5)::after {
+.advantages__item:nth-child(2n+4)::after {
   @include pseudo();
   height: 2px;
   background-color: rgba(209, 10, 66, 0.2);
   left: 0;
+  right: 20px;
+  top: -80px;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.advantages__item:nth-child(2n+5)::after {
+  @include pseudo();
+  height: 2px;
+  background-color: rgba(209, 10, 66, 0.2);
+  left: 20px;
   right: 0;
-  top: -65px;
+  top: -80px;
 
   @include vp-1199 {
     display: none;
@@ -126,6 +140,8 @@
 
 .advantages__item-text-wrapper h3 {
   margin: 0;
+  margin-top: -5px;
+  margin-bottom: 5px;
   font-weight: 700;
   font-size: 22px;
   line-height: 33px;
@@ -136,6 +152,10 @@
   }
 }
 
+.advantages__item-number-wrapper {
+  margin-top: -5px;
+}
+
 .advantages__item-number {
   display: block;
   font-weight: 700;
@@ -144,22 +164,20 @@
   margin-right: 30px;
   margin-top: -20px;
 
-  background: linear-gradient(142.51deg, #D10A42 10%, #0041CA 87.33%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(142.51deg, #d10a42 10%, #0041ca 87.33%);
   background-clip: text;
   color: transparent;
 
   @include vp-1199 {
     font-size: 58px;
-line-height: 87px;
+    line-height: 87px;
   }
 
   @include vp-767 {
     margin-right: 0;
-    background: linear-gradient(137.61deg, #D10A42 30%, #0041CA 65.58%);
-    -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: linear-gradient(137.61deg, #d10a42 30%, #0041ca 65.58%);
+    background-clip: text;
+    color: transparent;
   }
 }
 
@@ -179,7 +197,7 @@ line-height: 87px;
   color: #2e35ac;
   margin-top: -23px;
 
-@include vp-767 {
+  @include vp-767 {
     margin-bottom: 10px;
   }
 }
@@ -190,12 +208,12 @@ line-height: 87px;
   font-size: 26px;
   line-height: 39px;
   text-align: center;
-  margin-top: -10px;
-  margin-bottom: 30px;
+  margin-top: -15px;
+  margin-bottom: 32px;
 
   @include vp-1199 {
     font-size: 22px;
-line-height: 33px;
+    line-height: 33px;
   }
 }
 

@@ -16,8 +16,8 @@
 
 .gym__wrapper {
   display: grid;
-  grid-template-columns: 35.8% 56.9%;
-  column-gap: 7.3%;
+  grid-template-columns: 37% 56.9%;
+  column-gap: 6.1%;
 
   @include vp-1199 {
     grid-template-columns: 1fr;
@@ -26,7 +26,7 @@
 
 .gym__info {
   padding-left: 60px;
-  padding-top: 35px;
+  padding-top: 38px;
 
   @include vp-1199 {
     padding: 0;
@@ -63,7 +63,7 @@
 
 .gym__info span {
   display: inline-block;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
@@ -82,6 +82,8 @@
 }
 
 .gym__text-wrapper {
+  margin-top: 8px;
+
   @include vp-1199 {
     display: none;
   }
@@ -106,7 +108,7 @@
   height: 228px;
   left: 37.7%;
   top: 85.2%;
-  margin-top: -110px;
+  margin-top: -114px;
 
   @include vp-1199 {
     width: 266px;
@@ -125,6 +127,7 @@
 }
 
 .gym__video {
+  background-color: $color-whisper;
   position: relative;
   overflow: hidden;
   height: 100%;

@@ -16,7 +16,7 @@
 
   &::before {
     @include pseudo();
-    width: 238px;
+    width: 285px;
     height: 330px;
     right: 0;
     bottom: -70px;
@@ -25,12 +25,12 @@
     background-position: center;
 
     @media (min-width: $vp-1200) {
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/disks-desktop-2x.png");
-      width: 238px;
-      height: 330px;
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/disks-desktop-2x.png");
+        width: 238px;
+        height: 330px;
+      }
     }
-  }
 
     @include vp-1199 {
       width: 347px;
@@ -53,7 +53,7 @@
 
 .subscription__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   font-family: $ff-alumni;
   font-style: normal;
   font-weight: 600;

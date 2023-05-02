@@ -107,7 +107,7 @@
                 <img src="img/gym-video-desktop.jpg" srcset="img/gym-video-desktop-2x.jpg 2x" width="364" height="228"
                   alt="Спортзал с тренажерами.">
               </picture>
-              <button class="gym__video-btn" aria-label="Запуск видео." data-video-button></button>
+              <button type="button" class="gym__video-btn" aria-label="Запуск видео." data-video-button></button>
             </div>
           </div>
         </div>
@@ -491,7 +491,6 @@
           </ul>
         </div>
       </section>
-
       <section class="offers" id="offers">
         <div class="container">
           <h2 class="offers__title">Акции</h2>
@@ -613,58 +612,59 @@
           </div>
         </div>
       </section>
-
       <section class="contacts">
         <div class="contacts__form-wrapper">
-          <h2 class="contacts__form-title">Бесплатное занятие</h2>
-          <div class="contacts__form" data-form-validate data-callback="callback">
-            <form class="application-form" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="application-form__fieldset" data-on-input-validate>
-                <div class="application-form__input custom-input" data-validate-type="text" data-limitation="name"
-                  data-message-base="Обязательное поле" data-message-extra="Поле заполнено неверно" data-required>
-                  <input type="text" name="name" placeholder="Имя" aria-label="Укажите свое имя." required>
-                </div>
-                <div class="application-form__input custom-input" data-validate-type="phone"
-                  data-message-extra="Поле заполнено неверно" data-message-base="Обязательное поле"
-                  data-message-success="Поле заполнено верно" data-on-input-validate data-required>
-                  <input type="tel" name="phone-number" placeholder="Телефон" aria-label="Укажите свой номер телефона."
-                    required>
-                </div>
-              </fieldset>
-              <button class="btn btn--form" type="submit">Отправить</button>
-            </form>
+          <div class="contacts__form-container">
+            <h2 class="contacts__form-title">Бесплатное занятие</h2>
+            <div class="contacts__form" data-form-validate data-callback="callback">
+              <form class="application-form" action="https://echo.htmlacademy.ru/" method="get">
+                <fieldset class="application-form__fieldset" data-on-input-validate>
+                  <div class="application-form__input custom-input" data-validate-type="text" data-limitation="name"
+                    data-message-base="Обязательное поле" data-message-extra="Поле заполнено неверно" data-required>
+                    <input type="text" name="name" placeholder="Имя" aria-label="Укажите свое имя." required>
+                  </div>
+                  <div class="application-form__input custom-input" data-validate-type="phone"
+                    data-message-extra="Поле заполнено неверно" data-message-base="Обязательное поле"
+                    data-message-success="Поле заполнено верно" data-on-input-validate data-required>
+                    <input type="tel" name="phone-number" placeholder="Телефон"
+                      aria-label="Укажите свой номер телефона." required>
+                  </div>
+                </fieldset>
+                <button class="btn btn--form" type="submit">Отправить</button>
+              </form>
+            </div>
           </div>
         </div>
         <div class="contacts__info">
-          <h2 class="contacts__info-title">Контакты</h2>
-          <ul class="contacts__info-list">
-            <li class="contacts__info-item">
-              <h3>Адрес:</h3>
-              <p>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</p>
-            </li>
-            <li class="contacts__info-item">
-              <h3>Телефон:</h3>
-              <a class="contacts__info-item-tel" href="tel:+78005555555">8-800-555-55-55</a>
-            </li>
-            <li class="contacts__info-item">
-              <h3>График работы</h3>
-              <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
-            </li>
-            <li class="contacts__info-item">
-              <h3>Email:</h3>
-              <a class="contacts__info-item-mail" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-            </li>
-          </ul>
+          <div class="contacts__info-container">
+            <h2 class="contacts__info-title">Контакты</h2>
+            <ul class="contacts__info-list">
+              <li class="contacts__info-item">
+                <h3>Адрес:</h3>
+                <p>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</p>
+              </li>
+              <li class="contacts__info-item">
+                <h3>Телефон:</h3>
+                <a class="contacts__info-item-tel" href="tel:+78005555555">8-800-555-55-55</a>
+              </li>
+              <li class="contacts__info-item">
+                <h3>График работы:</h3>
+                <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
+              </li>
+              <li class="contacts__info-item">
+                <h3>Email:</h3>
+                <a class="contacts__info-item-mail" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-
       </section>
     </main>
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
           <a class="footer__logo" href="index.html" aria-label="Логотип фитнес-центра SUPERGYM.">
-            <svg class="header__contacts-logo-icon" width="87" height="18" viewBox="0 0 87 18" fill="currentColor">
+            <svg class="footer__contacts-logo-icon" width="87" height="18" viewBox="0 0 87 18" fill="currentColor">
               <use href="img/sprite.svg#logo"></use>
             </svg>
           </a>
@@ -687,6 +687,32 @@
               </li>
             </ul>
           </nav>
+          <ul class="footer__navigation-list-social">
+            <li class="footer__navigation-item-social">
+              <a class="footer__navigation-item-social-link" href="#">
+                <span class="visually-hidden">Вконтакте.</span>
+                <svg class="footer__navigation-item-social-icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor">
+                  <use href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__navigation-item-social">
+              <a class="footer__navigation-item-social-link" href="#">
+                <span class="visually-hidden">Одноклассники.</span>
+                <svg class="footer__navigation-item-social-icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor">
+                  <use href="img/sprite.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__navigation-item-social">
+              <a class="footer__navigation-item-social-link" href="#">
+                <span class="visually-hidden">Reddit.</span>
+                <svg class="footer__navigation-item-social-icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor">
+                  <use href="img/sprite.svg#reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

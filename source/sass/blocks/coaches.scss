@@ -62,7 +62,7 @@
 .coaches__btn-next.swiper-button-next {
   border: none;
   background-color: transparent;
-  color: #AFAFAF;
+  color: #afafaf;
 }
 
 .coaches__btn-prev.swiper-button-prev:hover,
@@ -78,7 +78,7 @@
 }
 
 .coaches__btn-prev.swiper-button-prev {
-  left: -40px;
+  left: -62px;
 
   @include vp-1199 {
     left: 0;
@@ -86,7 +86,7 @@
 }
 
 .coaches__btn-next.swiper-button-next {
-  right: -40px;
+  right: -62px;
 
   @include vp-1199 {
     right: 0;

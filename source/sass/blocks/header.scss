@@ -32,7 +32,7 @@
 .header__contacts-logo {
   width: 122px;
   height: 23px;
-  margin-top: 15px;
+  margin-top: 10px;
 
   @include vp-1199 {
     margin-top: 10px;
@@ -87,12 +87,16 @@
   line-height: 31px;
   letter-spacing: 0.03em;
   transition: opacity $trans-default;
+  margin-bottom: 10px;
+  max-width: 15%;
 
   @include vp-1199 {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.02em;
+    margin-bottom: 0;
+    max-width: 60%;
   }
 
   @include vp-767 {
@@ -131,7 +135,7 @@
 }
 
 .header__main-info {
-  padding: 98px 64px 0 19px;
+  padding: 90px 13.91% 0 19px;
   text-align: right;
 
   @include vp-1199 {
@@ -170,6 +174,7 @@
 
 .header__main-info-name {
   display: inline-block;
+  word-wrap: break-word;
   font-family: $ff-alumni;
   font-weight: 600;
   font-size: 92px;
@@ -186,12 +191,16 @@
     letter-spacing: 0.05em;
     text-transform: none;
   }
+
+  @include vp-767 {
+    padding-left: 0;
+  }
 }
 
 .header__main-info-wrapper {
   display: grid;
   grid-template-columns: 30% 70%;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 
   @include vp-1199 {
     grid-template-columns: 36% 59%;
@@ -200,16 +209,15 @@
   }
 
   @include vp-767 {
-    grid-template-columns: 37.9% 62.1%;
+    grid-template-columns: 35% 65%;
     column-gap: 0;
-    margin-bottom: 20px;
   }
 }
 
 .header__main-info-list {
   margin: 0;
   padding: 0;
-  padding-top: 128px;
+  padding-top: 122px;
   list-style-type: none;
   font-weight: 400;
   font-size: 14px;

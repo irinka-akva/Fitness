@@ -1,5 +1,5 @@
 .offers {
-  padding-top: 100px;
+  padding-top: 95px;
   padding-bottom: 117px;
 
   @include vp-1199 {
@@ -25,7 +25,7 @@
 
   @include vp-1199 {
     font-size: 42px;
-  line-height: 50px;
+    line-height: 50px;
   }
 
   @include vp-767 {
@@ -63,11 +63,11 @@
   display: flex;
   flex-direction: column;
   background-color: $color-torch-red;
-  padding: 44px 38px;
+  padding: 32px 45px 42px 45px;
   color: $color-default-white;
 
   @include vp-767 {
-   text-align: center;
+    text-align: center;
   }
 }
 
@@ -94,7 +94,7 @@
 
   @include vp-767 {
     margin-bottom: 40px;
-   }
+  }
 }
 
 .offers__year-btn {
@@ -125,6 +125,7 @@
 }
 
 .offers__year-photo img {
+  background-color: $color-whisper;
 
   @include vp-1199 {
     width: 100%;
@@ -154,7 +155,7 @@
 .offers__general {
   display: flex;
   flex-direction: column;
-  padding: 35px;
+  padding: 27px;
   border: 7px solid;
   border-image: linear-gradient(175deg, #d10a42, #00359f) 25;
   color: $color-resolution-blue;
@@ -179,7 +180,7 @@
 
   @include vp-767 {
     text-align: center;
-   }
+  }
 }
 
 .offers__general p {
@@ -190,7 +191,7 @@
 
   @include vp-767 {
     text-align: center;
-   }
+  }
 }
 
 .offers__general--padding p {
@@ -208,7 +209,7 @@
 
   @include vp-767 {
     text-align: center;
-   }
+  }
 }
 
 .offers__general-btn {
@@ -219,6 +220,7 @@
   text-transform: uppercase;
   color: $color-resolution-blue;
   border-bottom: 1px solid $color-resolution-blue;
+  padding-bottom: 2px;
 
   &:hover,
   &:focus {

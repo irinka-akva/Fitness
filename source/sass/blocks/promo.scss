@@ -40,10 +40,10 @@
 }
 
 .promo__games-wrapper {
-  margin-bottom: 13px;
+  margin-bottom: 11px;
   display: grid;
-  grid-template-columns: 58.43% 26.74%;
-  gap: 14.83%;
+  grid-template-columns: 58% 29%;
+  gap: 13%;
 
   @include vp-1199 {
     grid-template-columns: 57.92% 27.72%;
@@ -64,6 +64,7 @@
   line-height: 79px;
   text-align: center;
   letter-spacing: 0.03em;
+  word-wrap: break-word;
 
   @include vp-1199 {
     font-size: 48px;
@@ -73,7 +74,7 @@
 
 .promo__games-info {
   display: inline-block;
-  margin-bottom: 35px;
+  margin-bottom: 44px;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
@@ -85,8 +86,12 @@
   }
 }
 
+.promo__games-info-container {
+  margin-left: 7px;
+}
+
 .promo__games-info-wrapper {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   @include vp-1199 {
     margin-bottom: 5px;
@@ -100,7 +105,8 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
+  margin-top: -3px;
 
   &::after {
     @include pseudo;
@@ -137,6 +143,7 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
+  word-wrap: break-word;
 
   @include vp-1199 {
     font-size: 24px;
@@ -144,12 +151,19 @@
   }
 }
 
+.promo__games-time {
+  display: inline-block;
+  margin-top: -5px;
+}
+
 .promo__games-date {
   padding-right: 7px;
+  margin-top: -5px;
+  word-wrap: break-word;
 }
 
 .promo__games-month {
-  padding-top: 9px;
+  padding-top: 3px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;

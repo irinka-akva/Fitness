@@ -11,11 +11,11 @@ const initSwiperPhotos = () => {
       319: {
         slidesPerView: 1,
       },
-      767: {
+      768: {
         slidesPerView: 2,
         spaceBetween: 30,
       },
-      1199: {
+      1200: {
         slidesPerView: 4,
         spaceBetween: 40,
       },

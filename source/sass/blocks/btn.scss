@@ -1,6 +1,6 @@
 .btn {
   display: inline-flex;
-  padding: 22px;
+  padding: 21px;
   color: $color-default-white;
   background-color: $color-transparent;
   border: 4px solid $color-default-white;
@@ -16,6 +16,7 @@
 
   &--promo {
     width: 100%;
+    padding: 24px 20px;
 
     @include vp-1199 {
       font-size: 10px;
@@ -39,6 +40,13 @@
       max-width: 320px;
       margin: 0 auto;
     }
+  }
+
+  &--form {
+    padding: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
   }
 
   &:hover,
