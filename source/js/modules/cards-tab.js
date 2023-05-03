@@ -3,6 +3,7 @@ const cards = catalog.querySelectorAll('[data-card]');
 
 const addDisplayStyle = () => {
   for (let i = 0; i < cards.length; i++) {
+
     if (cards[i].classList.contains('focus-visible')) {
       let cardActive = cards[i];
 
@@ -32,7 +33,6 @@ const cardsActionHandler = () => {
     element.addEventListener('touch', addDisplayStyle);
     element.addEventListener('keydown', addDisplayStyle);
     element.addEventListener('focus', addDisplayStyle);
-    element.addEventListener('click', addDisplayStyle);
   });
 };
 

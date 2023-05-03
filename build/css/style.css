@@ -2141,6 +2141,15 @@ button,
   display: none;
 }
 
+.card.focus-visible .card__back-info {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card.focus-visible .card__front::before {
+  display: none;
+}
+
 .feedback {
   padding-bottom: 120px;
 }
@@ -2467,6 +2476,8 @@ button,
 .gym__video-cover img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .gym__video-btn {

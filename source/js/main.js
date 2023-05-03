@@ -3,7 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {videoPlayHandler} from './modules/video-player';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initSwiperPhotos, initSwiperFeedback} from './modules/swiper/cards-swiper';
-import {cardsActionHandler} from './modules/cards-tab';
+// import {cardsActionHandler} from './modules/cards-tab';
 
 // ---------------------------------
 
@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initSwiperPhotos();
     initSwiperFeedback();
-    cardsActionHandler();
+    // cardsActionHandler();
   });
 });
 
