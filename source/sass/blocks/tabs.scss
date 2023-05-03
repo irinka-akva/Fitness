@@ -15,11 +15,13 @@
   @include vp-1199 {
     font-size: 18px;
     line-height: 27px;
+    margin-bottom: 60px;
   }
 
   @include vp-767 {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 50px;
   }
 }
 
@@ -38,7 +40,7 @@
     bottom: -17px;
 
     @include vp-1199 {
-      bottom: -20px;
+      bottom: -17px;
     }
   }
 }
@@ -68,7 +70,7 @@
   }
 
   @include vp-767 {
-    margin-right: 42px;
+    margin-right: 45px;
   }
 }
 
@@ -106,6 +108,7 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    gap: 33px;
   }
 }
 
@@ -117,8 +120,12 @@
   padding: 56px 20px 58px 20px;
   border: 7px solid $color-transparent;
 
+  @include vp-1199 {
+    padding: 56px 15px 58px 15px;
+  }
+
   @include vp-767 {
-    padding: 55px 15px;
+    padding: 45px 15px 48px 15px;
   }
 }
 
@@ -148,6 +155,10 @@
   line-height: 24px;
   text-align: center;
   color: $color-chambray;
+
+  @include vp-767 {
+    margin-bottom: 54px;
+  }
 }
 
 .tabs__element-item-price {
@@ -188,8 +199,13 @@
   text-align: center;
   margin-bottom: 35px;
 
+  @include vp-1199 {
+    margin-bottom: 36px;
+  }
+
   @include vp-767 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    padding-left: 5px;
   }
 }
 
@@ -201,7 +217,7 @@
   border: 2px solid $color-default-black;
   color: $color-default-black;
   min-width: 206px;
-  padding: 24px 20px 24px 20px;
+  padding: 24px 20px;
 
   &:hover,
   &:focus {
@@ -216,6 +232,7 @@
 .tabs__element-item:hover .tabs__element-item-button {
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   border: 0;
+  padding: 26px 22px;
   color: $color-default-white;
 }
 

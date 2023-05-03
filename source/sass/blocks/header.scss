@@ -11,7 +11,7 @@
 
   @include vp-767 {
     background: conic-gradient(from 167.26deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
-    padding-top: 15px 0 80px 0;
+    padding: 12px 0 78px 0;
   }
 }
 
@@ -21,11 +21,11 @@
   justify-content: space-between;
 
   @include vp-1199 {
-    margin-bottom: 25px;
+    margin-bottom: 17px;
   }
 
   @include vp-767 {
-    margin-bottom: 55px;
+    margin-bottom: 67px;
   }
 }
 
@@ -96,6 +96,7 @@
     line-height: 29px;
     letter-spacing: 0.02em;
     margin-bottom: 0;
+    margin-top: 5px;
     max-width: 60%;
   }
 
@@ -139,7 +140,7 @@
   text-align: right;
 
   @include vp-1199 {
-    padding: 57px 0 0 0;
+    padding: 50px 0 0 0;
   }
 
   @include vp-767 {
@@ -159,14 +160,14 @@
   text-align: right;
 
   @include vp-1199 {
-    padding-right: 0;
-    margin-bottom: 0;
+    padding-right: 5px;
+    margin-bottom: 8px;
     font-size: 34px;
     line-height: 41px;
   }
 
   @include vp-767 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 28px;
     line-height: 34px;
   }
@@ -190,10 +191,12 @@
     line-height: 86px;
     letter-spacing: 0.05em;
     text-transform: none;
+    margin-bottom: 15px;
   }
 
   @include vp-767 {
     padding-left: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -203,13 +206,13 @@
   margin-bottom: 48px;
 
   @include vp-1199 {
-    grid-template-columns: 36% 59%;
-    column-gap: 5%;
+    grid-template-columns: 35.2% 59%;
+    column-gap: 5.8%;
     margin-bottom: 20px;
   }
 
   @include vp-767 {
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 35.5% 64.5%;
     column-gap: 0;
   }
 }
@@ -225,11 +228,11 @@
   text-align: right;
 
   @include vp-1199 {
-    padding-top: 90px;
+    padding-top: 88px;
   }
 
   @include vp-767 {
-    padding-top: 70px;
+    padding-top: 75px;
     margin-right: -10px;
   }
 }

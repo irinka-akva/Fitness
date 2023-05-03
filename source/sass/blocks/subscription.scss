@@ -10,8 +10,8 @@
   }
 
   @include vp-767 {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 64px;
+    padding-bottom: 67px;
   }
 
   &::before {
@@ -36,7 +36,7 @@
       width: 347px;
       height: 298px;
       background-image: url("../img/disks-tablet.png");
-      bottom: -70px;
+      bottom: -50px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/disks-tablet-2x.png");
@@ -65,6 +65,8 @@
   @include vp-1199 {
     font-size: 42px;
     line-height: 50px;
+    padding-right: 15px;
+    margin-bottom: 23px;
   }
 
   @include vp-767 {
