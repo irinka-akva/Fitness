@@ -82,7 +82,7 @@
 
 .card__back-info {
   position: absolute;
-  padding: 53px 45px 53px 45px;
+  padding: 53px 45px 30px 45px;
   overflow-y: auto;
   top: 0;
   left: 0;
@@ -95,7 +95,7 @@
   transition: all 0.2s ease-out;
 
   @include vp-767 {
-    padding: 42px 30px 42px 25px;
+    padding: 42px 30px 30px 25px;
   }
 }
 

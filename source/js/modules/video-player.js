@@ -10,8 +10,8 @@ const makeVideoActive = () => {
 };
 
 const videoPlayHandler = () => {
-  videoButton.addEventListener('click', makeVideoActive, {passive: true});
-  videoButton.addEventListener('touchstart', makeVideoActive, {passive: true});
+  videoButton.addEventListener('click', makeVideoActive);
+  videoButton.addEventListener('touch', makeVideoActive);
 };
 
 

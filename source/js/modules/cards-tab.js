@@ -29,9 +29,10 @@ const addDisplayStyle = () => {
 
 const cardsActionHandler = () => {
   cards.forEach((element) => {
-    element.addEventListener('touchstart', addDisplayStyle);
+    element.addEventListener('touch', addDisplayStyle);
     element.addEventListener('keydown', addDisplayStyle);
     element.addEventListener('focus', addDisplayStyle);
+    element.addEventListener('click', addDisplayStyle);
   });
 };
 
