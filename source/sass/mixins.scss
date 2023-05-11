@@ -8,6 +8,12 @@
 
 // Desktop first
 
+@mixin vp-1301 {
+  @media (max-width: ($vp-1302 - 1px)) {
+    @content;
+  }
+}
+
 @mixin vp-1259 {
   @media (max-width: ($vp-1260 - 1px)) {
     @content;

@@ -10,6 +10,7 @@ const initSwiperPhotos = () => {
     breakpoints: {
       319: {
         slidesPerView: 1,
+        initialSlide: 0,
       },
       768: {
         slidesPerView: 2,
@@ -31,6 +32,7 @@ const initSwiperFeedback = () => {
       prevEl: '.feedback__btn-prev',
     },
     slidesPerView: 1,
+    spaceBetween: -1,
   });
 };
 

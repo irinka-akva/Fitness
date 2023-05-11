@@ -28,7 +28,8 @@
 
 .footer__logo {
   display: flex;
-  align-self: end;
+  align-self: center;
+  padding-top: 10px;
   color: $color-default-white;
   margin-right: 8px;
 
@@ -48,6 +49,7 @@
     height: 18px;
     align-self: start;
     margin-right: 13px;
+    padding-top: 0;
   }
 
   @include vp-767 {

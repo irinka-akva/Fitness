@@ -130,6 +130,9 @@
 
 .offers__year-photo img {
   background-color: $color-whisper;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
 
   @include vp-1199 {
     width: 100%;
@@ -159,7 +162,7 @@
 .offers__general {
   display: flex;
   flex-direction: column;
-  padding: 27px;
+  padding: 25px 27px 27px 27px;
   border: 7px solid;
   border-image: linear-gradient(175deg, #d10a42, #00359f) 25;
   color: $color-resolution-blue;

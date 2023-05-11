@@ -23,6 +23,7 @@
     background-image: url("../img/disks-desktop.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
     @media (min-width: $vp-1200) {
       @media (min-resolution: 2dppx) {

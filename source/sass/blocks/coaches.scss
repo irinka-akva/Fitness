@@ -48,7 +48,7 @@
   max-width: 100%;
 
   @include vp-1199 {
-    max-width: 566px;
+    width: 83.48%;
   }
 
   @include vp-767 {
@@ -56,6 +56,7 @@
     margin-left: 32px;
     margin-right: 32px;
     max-width: 700px;
+    width: auto;
   }
 }
 
@@ -79,7 +80,11 @@
 }
 
 .coaches__btn-prev.swiper-button-prev {
-  left: -62px;
+  left: -5.4%;
+
+  @include vp-1301 {
+    left: -4%;
+  }
 
   @include vp-1199 {
     left: -6px;
@@ -91,7 +96,11 @@
 }
 
 .coaches__btn-next.swiper-button-next {
-  right: -62px;
+  right: -5.4%;
+
+  @include vp-1301 {
+    right: -4%;
+  }
 
   @include vp-1199 {
     right: -6px;

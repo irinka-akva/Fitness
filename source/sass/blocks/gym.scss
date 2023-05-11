@@ -2,14 +2,14 @@
   width: 100%;
   max-width: 1260px;
   margin: 0 auto;
-  padding: 120px 50px;
+  padding: 120px 50px 234px 50px;
 
   @include vp-1199 {
-    padding: 102px 45px;
+    padding: 102px 45px 184px 45px;
   }
 
   @include vp-767 {
-    padding: 65px 0 70px 0;
+    padding: 65px 0 74.4% 0;
     min-width: $vp-320;
   }
 }
@@ -98,6 +98,10 @@
   }
 }
 
+.gym__photo {
+  position: relative;
+}
+
 .gym__photo img {
   background-color: $color-whisper;
 
@@ -112,27 +116,27 @@
 }
 
 .gym__video-wrapper {
-  position: relative;
+  position: absolute;
   width: 364px;
   height: 228px;
-  left: 37.7%;
-  top: 85.2%;
-  margin-top: -114px;
+  left: -9.5%;
+  top: 71.7%;
 
   @include vp-1199 {
-    width: 266px;
-    height: 167px;
     left: 50%;
     right: 50%;
-    margin-top: -85px;
+    top: 75.5%;
     transform: translate(-50%, 0);
+    aspect-ratio: 266/167;
+    height: auto;
+    width: 39.23%;
   }
 
   @include vp-767 {
-    width: auto;
+    width: 100%;
     height: auto;
     aspect-ratio: auto 320/167;
-    margin-top: 0;
+    top: 112.5%;
   }
 }
 
